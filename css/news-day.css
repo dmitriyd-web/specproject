@@ -1,0 +1,41 @@
+.news-day {
+    padding: 45rem 0 55rem;
+}
+
+.news-day .news-day__title {
+    width: calc(25% - 20rem);
+    margin: 0 10rem 44rem;
+    padding: 20rem 0 0;
+}
+
+.news-day .news-day__info {
+    width: calc(50% - 10rem);
+    margin: 0 0 44rem 10rem;
+}
+
+.news-day .news-day__info .large-text {
+    font-size: 24rem;
+    font-weight: 400;
+    line-height: 29rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 20rem;
+}
+
+.news-day .news-day__info .small-text {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.news-day .news-day__image {
+    width: calc(25% - 20rem);
+    margin: 0 10rem 44rem;
+}
+
+.news-day__button {
+    width: calc(75% - 20rem);
+    margin: 0 10rem 0 auto;
+}

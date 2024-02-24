@@ -1,0 +1,68 @@
+.advantages {
+    padding: 55rem 0 45rem;
+}
+
+.advantages-item {
+    position: relative;
+    width: calc(25% - 20rem);
+    margin: 0 10rem;
+    padding: 20rem 20rem 40rem;
+    color: var(--font-color);
+    border: 1rem solid var(--font-color);
+    border-image: linear-gradient(254.2deg, var(--font-color) 26.29%, var(--font-color) 82.44%) 1 round round;
+    
+    transition: .3s;
+}
+
+.advantages-item:hover {
+    border-image-source: url(../images/home/border-image-source.png);
+}
+
+.advantages-swiper-mobile {
+	display: none;
+}
+
+.advantages-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(100% 100% at 100% 0%, rgba(79, 176, 193, 0.42) 0%, rgba(79, 176, 193, 0) 70.96%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0;
+    transition: .3s;
+    z-index: 3;
+}
+
+.advantages-item:hover:before {
+    opacity: 1;
+}
+
+.advantages-item img {
+    position: relative;
+    z-index: 4;
+}
+
+.advantages-item h4 {
+    position: relative;
+    font-size: 20rem;
+    font-weight: 600;
+    line-height: 24rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 74rem;
+    z-index: 4;
+}
+
+.advantages-item p {
+    position: relative;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 21.78rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    z-index: 4;
+}

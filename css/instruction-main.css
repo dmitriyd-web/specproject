@@ -1,0 +1,29 @@
+.instruction-main {
+    position: relative;
+    padding: 125rem 0 0;
+}
+
+.instruction-main .section-title {
+    max-width: 1010rem;
+    position: relative;
+    margin: 0 10rem;
+    z-index: 3;
+}
+
+.instruction-main .section-title h1 {
+    font-size: 32rem;
+    font-weight: 600;
+    line-height: 39rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 15rem;
+}
+
+.instruction-main .section-title p {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: left;
+    opacity: .7;
+}

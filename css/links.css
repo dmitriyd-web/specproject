@@ -1,0 +1,52 @@
+.links {
+    padding: 10rem 0 60rem;
+}
+
+.links-item {
+    display: flex;
+    position: relative;
+    width: calc((100% - 60rem)/3);
+    margin: 0 10rem 20rem;
+    background-color: #1B2F3B;
+    padding: 40rem 30rem;
+    border: 1rem solid #FFFFFF;
+    border-image: linear-gradient(254.2deg, var(--font-color) 26.29%, var(--font-color) 82.44%) 1 round round;
+}
+
+.links-item img {
+	width: 29rem;
+    position: absolute;
+    top: 18rem;
+    right: 16rem;
+}
+
+.links-item p {
+	width: calc(100% - 35rem);
+    font-size: 20rem;
+    font-weight: 600;
+    line-height: 24rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.links-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(100% 100% at 100% 0%, rgba(79, 176, 193, 0.42) 0%, rgba(79, 176, 193, 0) 70.96%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0;
+    transition: .3s;
+    z-index: 3;
+}
+
+.links-item:hover {
+    border-image-source: url(../images/home/border-image-source.png);
+}
+
+.links-item:hover:before {
+    opacity: 1;
+}

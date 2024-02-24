@@ -1,0 +1,96 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 19rem 0;
+    border-bottom: 1rem solid rgba(255, 255, 255, 0.15);
+    transition: .3s;
+    z-index: 4;
+}
+
+header.scroll {
+    transform: translateY(-150%);
+}
+
+header.no-scroll {
+    background-color: #021825;
+}
+
+header .container {
+    max-width: 1570rem;
+}
+
+header .header-logo {
+    width: 206rem;
+    margin: 0 10rem;
+}
+
+header .header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 441rem);
+    max-width: 900rem;
+    margin: 0 auto;
+}
+
+header .header-menu a {
+	display: flex;
+	flex-direction: column;
+	height: 20px;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 20rem;
+    letter-spacing: 0em;
+	overflow: hidden;
+    transition: .3s;
+}
+header .header-menu a span {
+    line-height: 20rem;
+    transform: translatey(-20rem);
+    transition: .3s;
+}
+
+header .header-menu a:hover span {
+    color: var(--blue-color);
+	line-height: 20rem;
+    transform: translatey(0rem);
+    transition: .3s;
+}
+
+header .header-phone {
+    display: flex;
+    align-items: center;
+    width: 195rem;
+    margin: 0 10rem;
+    font-size: 20rem;
+    font-weight: 600;
+    line-height: 24rem;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: .3s;
+}
+
+header .header-phone svg {
+	width: 15rem;
+    margin: 0 20rem 0 0;
+}
+
+header .header-phone svg path {
+    fill: var(--font-color);
+    transition: .3s;
+}
+
+header .header-phone:hover {
+    color: var(--blue-color);
+}
+
+header .header-phone:hover svg path {
+    fill: var(--blue-color);
+}
+
+header .mobile-burger {
+    display: none;
+}

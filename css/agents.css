@@ -1,0 +1,98 @@
+.agents {
+    padding: 20rem 0 85rem;
+}
+
+.agents-item {
+    position: relative;
+    width: calc((100% - 60rem)/3);
+    margin: 0 10rem 20rem;
+    background-color: #1B2F3B;
+    padding: 30rem 30rem 40rem;
+    border: 1rem solid #FFFFFF;
+    border-image: linear-gradient(254.2deg, var(--font-color) 26.29%, var(--font-color) 82.44%) 1 round round;
+}
+
+.agents-item .agents-image {
+    height: 77rem;
+    display: flex;
+    align-items: center;
+    margin: 0 0 40rem;
+}
+
+.agents-item .agents-image img {
+	max-height: 100%;
+}
+
+.agents-item .agents-title {
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    margin: 0 0 20rem;
+}
+
+.agents-item .agents-title p {
+    font-size: 24rem;
+    font-weight: 600;
+    line-height: 29rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.agents-item .agents-contacts {
+    height: 86rem;
+}
+
+.agents-item .agents-contacts a {
+    display: block;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.agents-item .agents-contacts a img {
+    margin: 0 16rem 0 0;
+}
+
+.agents-item .agents-contacts a + a {
+    margin-top: 10rem;
+}
+
+.agents-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(100% 100% at 100% 0%, rgba(79, 176, 193, 0.42) 0%, rgba(79, 176, 193, 0) 70.96%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0;
+    transition: .3s;
+    z-index: 3;
+}
+
+/*
+.agents-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 24, 37, 0.8);
+    opacity: 0;
+    transition: .3s;
+    z-index: 5;
+}
+*/
+
+.agents-item:hover {
+    border-image-source: url(../images/home/border-image-source.png);
+}
+
+.agents-item:hover:before {
+    opacity: 1;
+}

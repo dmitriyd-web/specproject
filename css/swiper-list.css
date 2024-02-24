@@ -1,0 +1,136 @@
+.more-info {
+    position: relative;
+    padding: 0 0 55rem;
+	z-index: 30;
+}
+
+.more-info .row {
+    position: relative;
+}
+
+.more-info__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: calc(50% - 20rem);
+    margin: -105rem 10rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30rem;
+    backdrop-filter: blur(7px);
+}
+
+.more-info__form #fraction {
+    display: flex;
+    align-items: center;
+    width: 40rem;
+}
+
+.more-info__form #fraction p {
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 17rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.more-info__form #fraction span.opacity {
+    opacity: .2;
+}
+
+.more-info__form .swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 140rem;
+    right: auto;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    margin-top: 0;
+    overflow: hidden;   
+    margin: 0 0 0 auto;
+}
+
+.more-info__form .swiper-pagination .swiper-pagination-bullet {
+    display: block;
+    width: 40rem;
+    height: 5rem;
+    background: var(--font-color);
+    border-radius: 2rem;
+    opacity: .2;
+    cursor: pointer;
+}
+
+.more-info__form .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.more-info__form .swiper-list {
+    margin: 40rem 0 20rem;
+}
+
+.more-info__form .swiper-list p {
+    max-width: 370rem;
+}
+
+.more-info .slider-navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100rem;
+    margin: auto 10rem 0 auto;
+}
+
+.more-info .slider-navigation .swiper-button-prev, .more-info .slider-navigation .swiper-button-next {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border: 1rem solid var(--font-color);
+    right: auto;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.more-info .slider-navigation .swiper-button-prev:after, .more-info .slider-navigation .swiper-button-next:after {
+    display: none;
+}
+
+.more-info .slider-navigation .swiper-button-prev:before, .more-info .slider-navigation .swiper-button-next:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--blue-color);
+    width: 21rem;
+    height: 100%;
+    top: 0;
+    left: -21rem;
+    transition: 1s;
+}
+
+.more-info .slider-navigation .swiper-button-prev:hover:before, .more-info .slider-navigation .swiper-button-next:hover:before {
+    left: 61rem;
+}
+
+.more-info .slider-navigation .swiper-button-next svg {
+    transform: rotate(180deg);
+}
+.more-info .slider-navigation .swiper-button-prev svg, .more-info .slider-navigation .swiper-button-next svg {
+	width: 34rem;
+    position: relative;
+}
+
+.more-info .show-page {
+    height: 40rem;
+}
+
+.more-info .show-page span {
+    line-height: 40rem;
+    transform: translatey(-20rem);
+}
+
+.more-info .show-page:hover span {
+    transform: translatey(20rem);
+}

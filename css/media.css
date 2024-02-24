@@ -1,0 +1,885 @@
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: .8px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: .7px;
+    }
+    .about-order .row {
+        height: auto;
+    }
+    .documents-item, .links-item, .agents-item, .news-page__item {
+        border-image: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        z-index: 20;
+    }
+    header .header-menu {
+        width: calc(100% - 320rem);
+        max-width: 100%;
+    }
+    header .header-phone {
+        width: auto;
+    }
+    header .header-phone svg {
+        margin: 0;
+    }
+    header .header-phone span {
+        display: none;
+    }
+    header {
+        padding: 25rem 0;
+        border-bottom: none;
+    }
+    header.open {
+        background-color: var(--bg-color);
+        border-bottom: 1px solid var(--font-color);
+    }
+    header .header-logo {
+        width: 115rem;
+    }
+    header .header-menu {
+        position: absolute;
+        background-color: var(--bg-color);
+        padding: 25rem 15rem;
+        top: 85rem;
+        width: calc(100% + 20rem);
+        flex-direction: column;
+        align-items: flex-start;
+        transition: .3s;
+        transform: translateX(-10000%);
+    }
+    header .header-menu.open {
+        transform: translateX(-10rem);
+    }
+    header .header-menu li + li {
+        margin-top: 15rem;
+    }
+    header .header-phone {
+        margin: 0 0 0 auto;
+    }
+    header .header-phone svg {
+        width: 19rem;
+        height: 19rem;
+    }
+    header .mobile-burger {
+        display: block;
+        position: relative;
+        width: 28rem;
+        height: 18rem;
+        margin: auto 0 auto 10rem;
+        cursor: pointer;
+    }
+    header .mobile-burger span {
+        position: absolute;
+        display: block;
+        width: 28rem;
+        height: 4rem;
+        border-radius: 1.5rem;
+        background-color: var(--font-color);
+        transition: .3s;
+    }
+    header .mobile-burger span:nth-child(1) {
+        left: 0;
+        top: 0;
+    }
+    header .mobile-burger span:nth-child(2) {
+        left: 0;
+        top: 7rem;
+    }
+    header .mobile-burger span:nth-child(3) {
+        left: 0;
+        top: 14rem;
+    }
+    header .mobile-burger.open span:nth-child(1) {
+        top: 7rem;
+        transform: rotate(45deg);
+    }
+    header .mobile-burger.open span:nth-child(2) {
+        display: none;
+    }
+    header .mobile-burger.open span:nth-child(3) {
+        top: 7rem;
+        transform: rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-order .row {
+        height: auto;
+    }
+    .about-order__info {
+        width: 100%;
+        padding: 20rem;
+        align-items: flex-start;
+    }
+    .about-order__info p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+
+    .about-order .more-btn__dark {
+        width: 100%;
+        height: 68rem;
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .about-order .more-btn__dark svg {
+        width: 24px;
+        height: 24px;
+    }
+    .agents-item {
+        width: calc(50% - 20rem);
+    }
+    .catalog-item {
+        width: calc((100% - 78rem)/3);
+    }
+    .links-item {
+        width: calc(50% - 20rem);
+    }
+    .single-card .row {
+        flex-direction: column-reverse;
+    }
+    .single-card .single-card__info {
+        width: calc(100% - 20rem);
+        margin: 0 10rem 40rem;
+    }
+    .single-card__sliders {
+        width: calc(100% - 20rem);
+        max-width: 500rem;
+        margin: 0 10rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 1px;
+    }
+    .home-main {
+        padding: 250rem 0 210rem;
+        height: auto;
+    }
+    .home-main .home-main__title h1 {
+        font-size: 20rem;
+        line-height: 22rem;
+    }
+    .more-info__form {
+        width: calc(100% - 20rem);
+        margin: -170rem 10rem 0;
+    }
+    .more-info__form .swiper-pagination {
+        width: 100rem;
+    }
+    .more-info__form .swiper-pagination .swiper-pagination-bullet {
+        width: 28rem;
+        height: 4rem;
+    }
+    .more-info__form .swiper-list p {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .more-info .slider-navigation {
+        margin: 40rem 10rem 0 auto;
+    }
+    .uslugi {
+        padding: 0 0 40rem;
+    }
+    .section-title {
+        margin: 0 10rem 20rem;
+    }
+    .section-title p {
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0 0 5rem;
+    }
+    .section-title h2 {
+        font-size: 20rem;
+        line-height: 24rem;
+        font-weight: 600;
+    }
+    .uslugi-item__desktop {
+        display: none;
+    }
+    .uslugi-swiper-mobile {
+        display: block;
+    }
+    .uslugi-swiper-mobile .uslugi-item {
+        max-width: 250rem;
+        border: 1px solid var(--font-color)!important;
+    }
+    .uslugi-item p {
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 20rem 0 5rem;
+    }
+    .uslugi-item a {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .news-day {
+        padding: 0 0 40rem
+    }
+    .news-day .news-day__title {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .news-day .news-day__info {
+        width: calc(100% - 20rem);
+        margin: 0 10rem 20rem;
+    }
+    .news-day .news-day__info .large-text {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .news-day .news-day__info .small-text {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .news-day .news-day__image {
+        width: calc(100% - 20rem);
+        margin: 0 10rem;
+    }
+    .news-day__button {
+        width: calc(100% - 20rem);
+        margin: 20rem 10rem 0 auto;
+    }
+    .advantages {
+        padding: 0 0 40rem;
+    }
+    .advantages-item__desktop {
+        display: none;
+    }
+    .advantages-swiper-mobile {
+        display: block;
+    }
+    .advantages-swiper-mobile .advantages-item {
+        max-width: 310rem;
+        border: 1px solid var(--font-color)!important;
+    }
+    .news {
+        padding: 0 0 110rem;
+    }
+    .news-list {
+        grid-template-areas:
+        "news-item__first"
+        "news-item__second"
+        "news-item__third";
+    }
+    .news-list .news-item__first {
+        height: 350rem;
+        padding: 20rem 20rem 20rem;
+        margin: 0 10px 10px;
+    }
+    .news-list .news-item .news-date span {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .news-list .news-item .news-date svg {
+        display: none;
+    }
+    .news-list .news-item .news-title {
+        font-size: 16rem;
+        line-height: 20rem;
+        text-transform: uppercase;
+        margin: auto 0 8rem;
+    }
+    .news-list .news-item__first .news-description {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .news-list .news-item__second, .news-list .news-item__third {
+        height: 220rem;
+        padding: 20rem 20rem 20rem;
+        margin: 0 10px 10px;
+    }
+    footer {
+        padding: 20rem 0 25rem;
+    }
+    footer .row {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "footer-logo"
+        "footer-contacts"
+        " footer-address"
+        "footer-links"
+        "footer-copyright"
+        "footer-created";
+    }
+    .footer-logo {
+        width: 154rem;
+        margin: 0 10rem 43rem;
+    }
+    .footer-contacts {
+        width: 100%;
+        margin: 0 10rem 23rem;
+    }
+    .footer-contacts .footer-email, .footer-contacts .footer-phone {
+        font-size: 20rem;
+        line-height: 24rem;
+        margin: 0 0 20rem;
+    }
+    .footer-address {
+        width: 100%;
+        margin: 0 10rem 43rem;
+    }
+    .footer-address p {
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 0;
+    }
+    .footer-links {
+        justify-content: flex-start;
+        margin: 0 10rem 30rem;
+    }
+    .footer-links ul {
+        margin: 0;
+    }
+    .footer-links ul li {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .footer-links ul li + li {
+        margin-top: 14rem;
+    }
+    .footer-copyright {
+        margin: 0 10rem 15rem;
+        line-height: 20rem;
+    }
+    .footer-created {
+        margin: 0 10rem;
+        line-height: 20rem;
+    }
+    .about {
+        padding: 15rem 0 10rem;
+    }
+    .about-main {
+        position: relative;
+        padding: 90rem 0 10rem;
+    }
+    .about-main .breadcrumbs {
+        margin: 0 10rem 10rem;
+    }
+    .about-items__title h2 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .about .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "about-items__title"
+        "about-items__info"
+        "timeline"
+        "about-items__images";
+    }
+    .about-items__title {
+        grid-area: about-items__title;
+    }
+    .about-items__info {
+        grid-area: about-items__info;
+        width: calc(100% - 20rem);
+        margin: 10rem 10rem 0;
+    }
+    .about-items__info .single-info p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .timeline {
+        grid-area: timeline;
+        margin: 40rem 10rem 0;
+    }
+    .about-items__images {
+        grid-area: about-items__images;
+        width: calc(100% - 20rem);
+        margin: 20rem 10rem 0;
+    }
+    .about-items__info .single-info.current {
+        position: relative;
+    }
+    .cards-main {
+        padding: 90rem 0 235rem;
+    }
+    .cards-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .cards-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 0 0 10rem;
+    }
+    .cards-main .section-title p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .cards-content {
+
+    }
+    .cards-content .section-title h2 {
+        max-width: 420rem;
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 0 auto 60px;
+    }
+    .cards-content__item {
+        margin: 0 10px;
+        flex-direction: column-reverse;
+    }
+    .cards-content__item .item-title {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .cards-content__item .item-title h4 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .cards-content__item .item-title p {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .cards-content__item img {
+        width: auto;
+        margin: 0 auto;
+    }
+    .cards-content__item + .cards-content__item {
+        margin: 60px 10px 0;
+    }
+    .cards-content__item.cards-content__item--reverse {
+        flex-direction: column;
+    }
+    .cards-info {
+        margin: 60px 10px 0;
+        height: auto;
+        padding: 0 0 200px;
+        background-repeat: no-repeat;
+        background-size: auto 180px;
+        background-position: 0% bottom;
+    }
+    .cards-info .cards-info__mobile {
+        display: block;
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .cards-info .cards-info__dasktop {
+        display: none;
+    }
+    .cards-order {
+        margin: 60px 0 0;
+    }
+    .cards-order .cards-order__info {
+        width: calc(100% - 20rem);
+    }
+    .cards-order .cards-order__info p {
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0 0 10px;
+    }
+    .cards-order .cards-order__link {
+        width: calc(100% - 20rem);
+        padding: 20px;
+        margin: 30px 0 0;
+    }
+    .documents-main {
+        padding: 90rem 0 10rem;
+    }
+    .documents-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .documents-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .documents {
+        padding: 5rem 0 80rem;
+    }
+    .documents-item img {
+        width: 30rem;
+        margin: 0 30rem 0 0;
+    }
+    .documents-item p {
+        width: calc(100% - 60rem);
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0;
+    }
+    .documents-item .more-btn {
+        width: 100%;
+        margin: 25rem 0 0;
+        font-size: 13rem;
+    }
+    .documents-item + .documents-item {
+        margin-top: 10rem;
+    }
+    .news-main {
+        padding: 90rem 0 10rem;
+    }
+    .news-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .news-main .breadcrumbs {
+        margin: 0px 10rem 30rem;
+    }
+    .news-page__item .news-image {
+        width: 100%;
+        height: 225px;
+    }
+    .news-page__item .news-content {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .news-page__item .news-content .news-title {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .news-page__item .news-content .news-info {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .news-bottom .news-date, .news-bottom .news-link {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .news-bottom .news-link svg {
+        width: 24rem;
+    }
+    .news-page__item + .news-page__item {
+        margin-top: 40rem;
+    }
+    .instruction-main {
+        padding: 90rem 0 0;
+    }
+    .instruction {
+        padding: 0 0 80rem;
+    }
+    .instruction-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 0 0 25rem;
+    }
+    .instruction-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .instruction-main .section-title p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .instruction .instruction-info {
+        width: calc(100% - 20rem);
+    }
+    .instruction .instruction-info p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .instruction .instruction-info .mobile-image {
+        display: block;
+        width: 100%;
+        border: 0.62px solid #FFFFFF;
+        margin: 25px 0;
+    }
+    .instruction .instruction-info .instruction-download p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .instruction .instruction-image {
+        display: none;
+    }
+    .agents {
+        padding: 10rem 0 60rem;
+    }
+    .agents-main {
+        position: relative;
+        padding: 90rem 0 10rem;
+    }
+    .agents-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .agents-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .agents-item {
+        width: calc(100% - 20rem);
+        padding: 20rem;
+    }
+    .agents-item .agents-image {
+        margin: 0 0 20rem;
+    }
+    .agents-item .agents-title {
+        height: 20rem;
+    }
+    .agents-item .agents-title p {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .agents-item .agents-contacts {
+        height: 65rem;
+    }
+    .agents-item .agents-contacts a {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .agents-item .agents-contacts a img {
+        width: 14rem;
+    }
+    .agents-item .agents-contacts a + a {
+        margin-top: 5rem;
+    }
+    .catalog {
+        padding: 10rem 0 60rem;
+    }
+    .catalog-main {
+        padding: 90rem 0 10rem;
+    }
+    .catalog-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .catalog-main .section-title {
+        width: calc(100% - 20rem);
+    }
+    .catalog-main .section-image {
+        display: none;
+    }
+    .catalog-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .catalog-main .section-title p {
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0;
+    }
+    .catalog-item {
+        width: calc((100% - 40rem)/2);
+        margin: 0 10rem 20rem;
+        padding: 20px;
+    }
+    .catalog-item .catalog-discount {
+        margin: 10rem 0 20rem -20rem;
+    }
+    .catalog-item .catalog-title {
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 0 0 10rem;
+    }
+    .catalog-item .catalog-price {
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0 0 10rem;
+    }
+    .catalog-item .more-btn {
+        font-size: 13rem;
+    }
+    .catalog-item .more-btn svg {
+        width: 24rem;
+    }
+    .contacts-main {
+        padding: 90rem 0 10rem;
+    }
+    .contacts-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .contacts {
+        padding: 30rem 0 80rem;
+    }
+    .contacts .contacts-title {
+        width: calc(100% - 20rem);
+        margin: 0 10rem 20rem;
+    }
+    .contacts .contacts-title h2 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .contacts .contacts-info {
+        width: calc(100% - 20rem);
+        margin: 0 10rem 20rem;
+    }
+    .contacts .contacts-info .contacts-address {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .contacts .contacts-info .contacts-item {
+        margin: 10rem 0 0;
+    }
+    .contacts .contacts-info .contacts-item a {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .contacts .contacts-info .contacts-item p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .contacts .contacts-order {
+        width: calc(100% - 20rem);
+        margin: 0 10rem 20rem;
+    }
+    form .form-item {
+        width: 100%;
+        margin: 0 0 10rem;
+    }
+    form .form-item.form-textarea {
+        width: 100%;
+        margin: 0;
+    }
+    form .form-policy {
+        margin: 0 0 10rem;
+    }
+    form .more-btn {
+        width: 100%;
+        font-size: 13rem;
+        margin: 0;
+    }
+    form .more-btn svg {
+        width: 24rem;
+    }
+    .links-main {
+        padding: 90rem 0 10rem;
+    }
+    .links-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .links-main .section-title h1 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .links-item {
+        width: calc(100% - 20rem);
+        padding: 20rem;
+    }
+    .links-item p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .single-card-main {
+        padding: 90rem 0 10rem;
+    }
+    .single-card-main .breadcrumbs {
+        margin: 0 10rem 30rem;
+    }
+    .single-card .single-card__info {
+        margin: 0 10rem 20rem
+    }
+    .single-card__info h2 {
+        font-size: 16rem;
+        line-height: 20rem;
+        margin: 0 0 15rem;
+    }
+    .single-card__info .single-card__article, .single-card__info .single-card__description {
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0 0 10rem;
+    }
+    .single-card__buttons {
+        padding: 10rem 0 0;
+    }
+    .single-card__buttons .more-btn {
+        font-size: 13rem;
+    }
+    .share p {
+        margin: 10rem 0;
+    }
+    .single-card__sliders .mySwiper2 {
+        padding: 20rem 0 40rem;
+    }
+    .single-card__sliders .mySwiper2 .discount {
+        bottom: 10rem;
+    }
+    .single-card__sliders .mySwiper .swiper-slide {
+        width: 58rem !important;
+        height: 58rem;
+    }
+    .single-card__sliders .mySwiper .swiper-slide img {
+        width: 40rem;
+    }
+    .content-404 {
+        padding: 80rem 0;
+    }
+    .title-404 p {
+        font-size: 200rem;
+        line-height: 200rem;
+    }
+    .title-404 img {
+        top: calc(60% - 45rem);
+        left: calc(50% - 65rem);
+        width: 130rem;
+    }
+    .not-found-404 {
+        font-size: 30rem;
+        line-height: 36rem;
+        margin: 0 10rem 20rem;
+    }
+    .not-found-404 h4 {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+    .not-found-404 p {
+        font-size: 13rem;
+        line-height: 16rem;
+        margin: 0 0 20rem;
+    }
+    .content-404 .more-btn {
+        font-size: 13rem;
+    }
+    .content-404 .more-btn svg {
+        width: 24rem;
+    }
+    .popup-form {
+        width: 98%;
+        left: 1%;
+        padding: 20rem;
+    }
+    .popup-close {
+        top: 20rem;
+        right: 20rem;
+    }
+    .before-title, .popup-title {
+        font-size: 16rem;
+        line-height: 20rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .timeline-year p {
+        font-size: 13rem;
+        line-height: 16rem;
+    }
+    .timeline-year.active p {
+        font-size: 16rem;
+        line-height: 20rem;
+        left: -8rem;
+    }
+    .catalog-item {
+        width: calc(100% - 20rem);
+    }
+    .title-404 p {
+        font-size: 100rem;
+        line-height: 100rem;
+    }
+    .title-404 img {
+        top: calc(80% - 40rem);
+        left: calc(50% - 30rem);
+        width: 60rem;
+    }
+    .content-404 .more-btn {
+        max-width: 300rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 320px) {
+    
+}

@@ -1,0 +1,71 @@
+.catalog {
+    padding: 10rem 0 20rem;
+}
+
+.catalog-item {
+    position: relative;
+    width: calc(25% - 26rem);
+    margin: 0 13rem 40rem;
+    background-color: #1B2F3B;
+    padding: 40rem 46rem 24rem;
+    border: 1rem solid #FFFFFF;
+    border-image: linear-gradient(254.2deg, var(--font-color) 26.29%, var(--font-color) 82.44%) 1 round round;
+}
+
+.catalog-item .catalog-discount {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95rem;
+    height: 31rem;
+    background-color: var(--blue-color);
+    border-radius: 0 5rem 5rem 0;
+    margin: 10rem 0 33rem -46rem;
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.catalog-item .catalog-title {
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 12rem;
+}
+
+.catalog-item .catalog-price {
+    font-size: 18rem;
+    font-weight: 500;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 0 18rem;
+}
+
+.catalog-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(100% 100% at 100% 0%, rgba(79, 176, 193, 0.42) 0%, rgba(79, 176, 193, 0) 70.96%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0;
+    transition: .3s;
+    z-index: 3;
+}
+
+.catalog-item:hover {
+    border-image-source: url(../images/home/border-image-source.png);
+}
+
+.catalog-item:hover:before {
+    opacity: 1;
+}

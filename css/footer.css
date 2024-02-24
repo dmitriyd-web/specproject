@@ -1,0 +1,96 @@
+footer {
+    padding: 40rem 0 50rem;
+    border-top: 1rem solid var(--font-color);
+}
+
+footer .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "footer-logo footer-logo footer-logo"
+        "footer-contacts footer-address footer-links"
+        "footer-copyright footer-created footer-links";
+}
+
+.footer-logo {
+    grid-area: footer-logo;
+    margin: 0 10rem 25rem;
+}
+.footer-contacts {
+    grid-area: footer-contacts;
+    margin: 0 10rem;
+}
+.footer-contacts .footer-email, .footer-contacts .footer-phone {
+    display: block;
+    font-size: 40rem;
+    font-weight: 400;
+    line-height: 48rem;
+    letter-spacing: 1.5rem;
+    text-align: left;
+    margin: 0 0 15rem;
+    transition: .3s;
+}
+
+.footer-contacts .footer-email:hover, .footer-contacts .footer-phone:hover {
+    color: var(--blue-color);
+}
+
+.footer-address {
+    grid-area: footer-address;
+    margin: 0 10rem;
+}
+
+.footer-address p {
+    max-width: 302rem;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 24rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 5rem 0 0 26%;
+}
+
+.footer-links {
+    grid-area: footer-links;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10rem;
+}
+.footer-links ul {
+    list-style-type: none;
+    margin: 5rem 60rem 0 0;
+}
+
+.footer-links ul li {
+    line-height: 29rem;
+}
+
+.footer-links ul a {
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 19rem;
+    letter-spacing: 0em;
+    text-align: left;
+    transition: .3s;
+}
+
+.footer-links ul a:hover {
+    color: var(--blue-color);
+}
+
+.footer-copyright {
+    grid-area: footer-copyright;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 17rem;
+    letter-spacing: 0em;
+    margin: 60rem 10rem 0;
+}
+.footer-created {
+    grid-area: footer-created;
+    font-size: 14rem;
+    font-weight: 400;
+    line-height: 17rem;
+    letter-spacing: 0em;
+    margin: 60rem 10rem 0 27%;
+}

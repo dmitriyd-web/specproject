@@ -1,0 +1,20 @@
+.agents-main {
+    position: relative;
+    padding: 125rem 0 10rem;
+}
+
+.agents-main .section-title {
+    max-width: 600rem;
+    position: relative;
+    margin: 0 10rem;
+    z-index: 3;
+}
+
+.agents-main .section-title h1 {
+    font-size: 32rem;
+    font-weight: 600;
+    line-height: 39rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}

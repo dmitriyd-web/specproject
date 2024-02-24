@@ -1,0 +1,129 @@
+.cards-content {
+    position: relative;
+    margin-top: -195rem;
+    padding: 65rem 0 110rem;
+}
+
+.cards-content .section-title h2 {
+    max-width: 700rem;
+    font-size: 32rem;
+    line-height: 38.73rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards-content__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 920rem;
+    margin-left: 10%;
+}
+
+.cards-content__item.cards-content__item--reverse {
+    margin-left: 15%;
+}
+
+.cards-content__item + .cards-content__item {
+    margin-top: 50rem;
+}
+
+.cards-content__item img {
+    width: calc(50% - 60rem);
+    margin: 0 10rem;
+}
+
+.cards-content__item .item-title {
+    width: calc(50% - 60rem);
+    margin: 0 10rem;
+}
+
+.cards-content__item .item-title h4 {
+    font-size: 24rem;
+    font-weight: 600;
+    line-height: 29rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 20rem;
+}
+
+.cards-content__item .item-title p {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.cards-info {
+    height: 390rem;
+    width: calc(100% - 20rem);
+    margin: 110rem 10rem 0;
+    background-image: url(../images/cards/cards-info.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.cards-info .cards-info__mobile {
+    display: none;
+}
+
+.cards-info .cards-info__dasktop {
+    width: 480rem;
+    margin: 100rem 0 0 50%;
+}
+.cards-info .cards-info__dasktop p {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 22rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #021825;
+}
+
+.cards-order {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 110rem 0 0;
+}
+
+.cards-order .cards-order__info {
+    width: calc(100% - 480rem);
+    max-width: 750rem;
+    margin: 0 10rem;
+}
+
+.cards-order .cards-order__info p {
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 25rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 40rem;
+}
+
+.cards-order .cards-order__link {
+    width: 440rem;
+    margin: 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40rem;
+    font-size: 18rem;
+    font-weight: 400;
+    line-height: 25rem;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 1rem solid #FFFFFF
+}
+
+.cards-order .cards-order__link svg {
+    margin: auto 0 0 auto;
+    transform: rotate(140deg);
+}
+
+.cards-order .cards-order__link svg path {
+    stroke: var(--font-color)
+}
